@@ -3,7 +3,9 @@
 ## repo
 ```
 yum repolist all
-
+yum history info git
+yum list
+yum list --showduplicates git
 ```
 
 ## yum group
