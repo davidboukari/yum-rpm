@@ -58,4 +58,11 @@ ID     | Ligne de commande        | Date et heure    | Action         | Modifié
 history list
 
 yum history info httpd
+
+yum history package-list httpd
+Modules complémentaires chargés : fastestmirror
+ID     | Action         | Package
+-------------------------------------------------------------------------------
+    10 | Installation   | httpd-2.4.6-90.el7.centos.x86_64
+history package-list
 ```
