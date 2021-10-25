@@ -6,6 +6,13 @@ yum repolist all
 yum history info git
 yum list
 yum list --showduplicates git
+
+yum  whatprovides netstat
+Dernière vérification de l’expiration des métadonnées effectuée il y a 4:01:23 le lun. 25 oct. 2021 20:54:51 CEST.
+net-tools-2.0-0.52.20160912git.el8.x86_64 : Basic networking tools
+Dépôt               : baseos
+Correspondances trouvées dans  :
+Nom de fichier : /usr/bin/netstat
 ```
 
 ## Add and enable a new repo
