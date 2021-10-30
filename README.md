@@ -1,5 +1,12 @@
 # yum-rpm
 
+## dnf
+```
+sudo dnf update
+wget https://atom.io/download/rpm -O atom.x86_64.rpm
+sudo dnf localinstall atom.x86_64.rpm
+```
+
 ## rpm
 ```
 ## Dependencies
