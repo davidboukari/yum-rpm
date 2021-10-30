@@ -1,4 +1,37 @@
-# yum
+# yum-rpm
+
+## rpm
+```
+## Dependencies
+# rpm -qp atom.rpm --requires
+(glib2 or kde-cli-tools or xdg-utils)
+(libcurl.so.3()(64bit) or libcurl.so.4()(64bit))
+alsa-lib
+git-core
+gtk3
+libX11-xcb.so.1()(64bit)
+libXss.so.1()(64bit)
+libgbm.so.1()(64bit)
+libgcrypt.so.20()(64bit)
+libnotify
+libnss3.so()(64bit)
+libsecret-1.so.0()(64bit)
+libxcb-dri3.so.0()(64bit)
+libxkbfile.so.1()(64bit)
+lsb-core-noarch
+polkit
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(RichDependencies) <= 4.12.0-1
+
+## show providers
+# rpm -qp atom.rpm --provides
+atom = 1.58.0-0.1
+atom(x86-64) = 1.58.0-0.1
+
+```
+
 
 ## repo
 ```
