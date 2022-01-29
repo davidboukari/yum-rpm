@@ -40,8 +40,10 @@ atom(x86-64) = 1.58.0-0.1
 ```
 
 
-## repo
+## yum repo
 ```
+yum list installed
+
 yum repolist all
 yum history info git
 yum list
