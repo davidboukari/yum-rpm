@@ -73,11 +73,12 @@ rpm2cpio php-5.1.4-1.esp1.x86_64.rpm | cpio -idm
 
 
 
-## yum repo
+## Create a personal yum repo
 
 * local repo
 ```
 # install createrepo
+# https://www.percona.com/blog/2020/01/02/how-to-create-your-own-repositories-for-packages/
 
 mkdir mylocalrepo/{base,added}
 cp *.rpm mylocalrepo/base
@@ -86,6 +87,16 @@ cp myapp.rpm mylocalrepo/added
 createrepo mylocalrepo
 
 # Configure httpd to /mylocalrepo
+
+
+# On the node
+yum clean all
+# probably desable package
+yum -y disable mypackage
+yum search mypackage
+
+yum info mypackage
+
 ```
 
 ```
